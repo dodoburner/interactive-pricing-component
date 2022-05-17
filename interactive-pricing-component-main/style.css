@@ -1,0 +1,23 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+
+html {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+body {
+  width: 1440px;
+  font-size: 15px;
+  font-family: 'Manrope', sans-serif;
+}
+
+p {
+  margin: 0;
+}
+
+h1 {
+  margin 0;
+}
