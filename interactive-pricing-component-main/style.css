@@ -1,23 +1,230 @@
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 11px; text-align: center;
+position:fixed;
+bottom:0 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 html {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
 }
 
 body {
-  width: 1440px;
+  margin: 0;
+  min-height: 100%;
   font-size: 15px;
   font-family: 'Manrope', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  padding-top: 50px;
+  background-color: hsl(230, 100%, 99%);
+  background-image: url(images/pattern-circles.svg), url(images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-position: center top, center top;
+  background-size: auto, contain;
+  
 }
 
-p {
+p,li {
   margin: 0;
+  color: hsl(225, 20%, 60%);
 }
 
 h1 {
-  margin 0;
+  margin: 15px;
+  color: hsl(227, 35%, 25%);
 }
+
+#box {
+  display: flex;
+  flex-direction: column;
+  margin-top: 70px;
+  background-color:  hsl(0, 0%, 100%);
+  min-width: 575px;
+  border-radius: 12px;
+  box-shadow: 10px 10px 20px rgba(133, 143, 173, 0.2);
+}
+
+#top-box {
+  padding: 40px 50px 10px;
+}
+
+#update-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#update-box-right {
+  display: flex;
+  align-items: center;
+}
+
+#page-views {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+#money{
+  color: hsl(227, 35%, 25%);
+  font-size: 40px;
+  font-weight: 800;
+  margin-right: 8px;
+}
+
+#slide-container {
+  width:100%;
+  margin: 30px 0px 40px 0px;
+}
+
+#slider {
+  -webkit-appearance: none;  
+  appearance: none;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  background-color: hsl(224, 65%, 95%);
+}
+
+#slider::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  appearance: none;
+  background-color: hsl(174, 86%, 45%);
+  background-image: url(images/icon-slider.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  box-shadow: 0px 20px 15px rgba(165, 243, 235, 0.8);
+}
+
+
+#toggle-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  margin: 50px 0px 0px;
+}
+
+/* CHECKOBX------------------------------------------------------*/
+
+#switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 22px;
+  margin: 0px 15px;
+}
+
+#switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#toggle-slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:  hsl(223, 50%, 87%);
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+#toggle-slider:hover {
+  background-color: hsl(174, 86%, 45%);
+}
+
+#toggle-slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+input:checked + #toggle-slider:before {
+  -webkit-transform: translateX(18px);
+  -ms-transform: translateX(18px);
+  transform: translateX(18px);
+}
+
+/*CHECKBOX END-----------------------------------------------------*/
+
+#discount {
+  background-color: hsl(14, 92%, 95%);
+  color: hsl(15, 100%, 70%);
+  font-weight: 800;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 10px;
+  margin-left: 8px;
+  position: absolute;
+  top: 0;
+  left: 85px;
+  white-space: nowrap;
+}
+
+#right-toggle-text {
+  position:relative;
+}
+
+#bottom-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid hsl(230, 100%, 97%);
+  padding: 35px 50px 25px;
+  margin-top: 40px;
+ 
+}
+
+li {
+  list-style: none;
+  margin: 10px 0px;
+  padding-left: 22px;
+  background-image: url(images/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+#trial-button {
+  color: hsl(226, 100%, 87%);
+  background-color: hsl(227, 35%, 25%);
+  width: 190px;
+  height: 42px;
+  border-radius: 25px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+#trial-button:hover {
+  color: white;
+}
+
+
+
+
+
+
+

@@ -16,9 +16,9 @@
 </head>
 <body>
 
- <p id="title">
+ <h1 id="title">
    Simple, traffic-based pricing
-  </p> 
+ </h1> 
  <p id="signup-text">
    Sign-up for our 30-day trial. No credit card required.
   </p>
@@ -26,36 +26,46 @@
 
   <div id="box">
 
-    <div id="update-box">
-      <p id="page-views">
-        PAGEVIEWS
-      </p>
+    <div id="top-box">
+      <div id="update-box">
+        <p id="page-views">
+         100K PAGEVIEWS
+        </p>
+    
+        <div id="update-box-right">
+          <p id="money">
+            $16.00
+          </p>
+          <p id="period">
+           / month
+          </p>
+        </div>
+      </div>
+     
+      <div id="slide-container">
+        <input type="range" id="slider" min="0" max="100" step="25">
+      </div>
+     
   
-      <p id="money">
-        $ /month
-      </p>
+      <div id="toggle-box">
+        <p class="toggle-text">
+          Monthly Billing
+        </p>
+    
+        <label id="switch">
+          <input type="checkbox">
+          <span id="toggle-slider"></span>
+        </label>
+    
+        <div id="right-toggle-text">
+          <p class="toggle-text">
+            Yearly Billing 
+          </p>
+          <p id="discount">25% discount</p>
+        </div>
+      </div>
     </div>
    
-    <input type="range" id="slider" min="0" max="100" step="25">
-
-    <div id="toggle-box">
-
-      <p class="toggle-text">
-        Monthly Billing
-      </p>
-  
-      <label id="switch">
-        <input type="checkbox">
-        <span id="slider"></span>
-      </label>
-  
-      <p class="toggle-text">
-        Yearly billing Billing
-        <span id="discount">
-          25% discount
-        </span>
-      </p>
-    </div>
     
     <div id="bottom-box">
 
@@ -67,7 +77,7 @@
         </ul>
       </div>
 
-      <button id="trial button">
+      <button id="trial-button">
         Start my trial
       </button>
     </div>
@@ -75,7 +85,7 @@
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Dorian</a>.
   </div>
 </body>
 </html>
